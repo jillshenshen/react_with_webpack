@@ -2,7 +2,11 @@ const path = require('path');
 const HTMLWebpackPlugin=require('html-webpack-plugin');
 
 module.exports = {
-
+	performance: {
+		hints: false,
+		maxEntrypointSize: 512000,
+		maxAssetSize: 512000
+	},
 	entry: './src/index.js',
 	output: {
 		path: path.join(__dirname, '/dist'),

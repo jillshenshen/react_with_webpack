@@ -131,5 +131,68 @@ a[href] {
   }
 
 
+  .dragPage{
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+  }
+
+
+
+.drag-header{
+   
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    
+  }
+
+
+
+  .drag-n-drop{
+    padding: 0.5rem;
+    text-align: center;
+    display: grid;
+    gap: .5rem;
+    width: 100%;
+    height:100%;
+    grid-template-columns: repeat(auto-fill,300px);
+    font-size: 15px;
+    align-items: start;
+  }
+
+
+  .dnd-group{
+    background-color: rgb(97, 96, 96);
+    padding:  0.5rem 0.5rem;
+    border-radius: 5px;
+
+  }
+
+  .dnd-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    background-color: white;
+    color: #333;
+    border-radius: 5px;
+
+}
+
+.group-title{
+  margin-bottom: .5rem;
+}
+
+.dnd-item:not(:last-of-type){
+    margin-bottom: .5rem;
+}
+
+
+.current{
+    background-color: #333;
+}
 
  
